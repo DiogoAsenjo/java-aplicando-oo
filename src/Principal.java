@@ -1,5 +1,6 @@
 import Modelos.Estagiario;
 import Modelos.Funcionario;
+import Modelos.Techlead;
 
 public class Principal {
     public static void main(String[] args) {
@@ -12,6 +13,10 @@ public class Principal {
 
         Estagiario ingrid = new Estagiario("Ingrid", "Estagiária", 900, "Negócios", "Unisanta");
 
-        System.out.println(ingrid.getFaculdade());
+        ingrid.imprimiDadosFuncionario();
+
+        Techlead isaac = new Techlead("Isaac", "Techlead", 5000, "Nutrien");
+
+        isaac.imprimiDadosFuncionario();
     }
 }

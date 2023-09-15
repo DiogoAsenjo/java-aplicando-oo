@@ -5,14 +5,12 @@ public class Estagiario extends Funcionario {
     private String stack;
     private String faculdade;
 
+    //CONSTRUTOR
     public Estagiario(String nome, String cargo, double salario, String stack, String faculdade) {
         super(nome, cargo, salario);
         this.stack = stack;
         this.faculdade = faculdade;
     }
-
-    //CONSTRUTOR
-
 
     //GETTER E SETTER
     public String getStack() {
@@ -31,4 +29,14 @@ public class Estagiario extends Funcionario {
         this.faculdade = faculdade;
     }
 
+    //MÉTODOS
+
+    @Override
+    public void imprimiDadosFuncionario() {
+        super.imprimiDadosFuncionario();
+        System.out.println("""
+                Stack: %s
+                Faculdade: %s
+                """.formatted(stack, faculdade));
+    }
 }
