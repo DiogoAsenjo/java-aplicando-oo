@@ -1,3 +1,5 @@
+package Modelos;
+
 public class Funcionario {
 
     //ATRIBUTOS
@@ -18,6 +20,9 @@ public class Funcionario {
     }
 
     //GETTERS E SETTER
+    public int getId() {
+        return id;
+    }
     public String getNome() {
         return nome;
     }
@@ -43,11 +48,11 @@ public class Funcionario {
     }
 
     //MÉTODOS
-     void aumentarSalario(double valorAumento) {
+     public void aumentarSalario(double valorAumento) {
          this.salario += valorAumento;
      }
 
-     void imprimiDadosFuncionario() {
+     public void imprimiDadosFuncionario() {
          System.out.println("""
                  Id: %s
                  Nome: %s
